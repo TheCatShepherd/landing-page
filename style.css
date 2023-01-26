@@ -3,11 +3,17 @@
     flex-direction: column;
 }
 
-.header {
+.header,
+.hero {
     display: flex;
-    flex-direction: column;
     background-color: #1F2937;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.header {
+    align-items: center;
 }
 
 .header > .right {
@@ -15,9 +21,20 @@
     font-size: 18px;
 }
 
+ul {
+    list-style-type: none;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
 .header > .logo {
     color: #F9FAF8;
     font-size: 24px;
+    margin-right: auto;
 }
 
 .links {
@@ -29,12 +46,18 @@
     display: flex;
 }
 
-.hero > .title {
+button {
+    background-color: #3882F6;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.right > .title {
     color: #F9FAF8;
     font-size: 48px;
 }
 
-.hero > .text {
+.right > .text {
     color: #E5E7EB;
     font-size: 18px;
 }
